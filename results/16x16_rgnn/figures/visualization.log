@@ -1,0 +1,10 @@
+2026-11-18 20:00:06 | INFO | Saved results\16x16_rgnn\figures\training_loss.png
+2026-11-18 20:00:06 | INFO | Saved results\16x16_rgnn\figures\validation_success_rate.png
+2026-11-18 20:00:06 | INFO | Saved results\16x16_rgnn\figures\validation_weighted_path_cost_ratio.png
+2026-11-18 20:00:06 | INFO | Saved results\16x16_rgnn\figures\validation_transition_evaluations.png
+2026-11-18 20:00:07 | INFO | Saved results\16x16_rgnn\figures\test_success_rate.png
+2026-11-18 20:00:07 | INFO | Saved results\16x16_rgnn\figures\test_weighted_path_cost_ratio.png
+2026-11-18 20:00:07 | INFO | Saved results\16x16_rgnn\figures\test_unique_state_expansions.png
+2026-11-18 20:00:08 | INFO | Saved results\16x16_rgnn\figures\test_transition_evaluations.png
+2026-11-18 20:00:08 | INFO | Saved results\16x16_rgnn\figures\test_search_time.png
+2026-11-18 20:00:08 | INFO | Generated 9 V2 figures in results\16x16_rgnn\figures

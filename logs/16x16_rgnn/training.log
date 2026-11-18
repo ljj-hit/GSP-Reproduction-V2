@@ -1,0 +1,174 @@
+2026-11-18 13:27:45 | INFO | ==============================================================================
+2026-11-18 13:27:45 | INFO | GSP-Reproduction-V2 training start
+2026-11-18 13:27:45 | INFO | Seed: 42
+2026-11-18 13:27:45 | INFO | CUDA: cuda:0 (NVIDIA GeForce RTX 5060 Laptop GPU)
+2026-11-18 13:27:45 | INFO | Online parameter device: cuda:0
+2026-11-18 13:27:45 | INFO | Target parameter device: cuda:0
+2026-11-18 13:27:45 | INFO | Train maps: 1000 | validation maps: 200
+2026-11-18 13:27:45 | INFO | Episodes: 3000 | transitions/search budget: 512
+2026-11-18 13:27:45 | INFO | R-GNN: d=32, layers=4, msg_hidden=64, beta=1.00
+2026-11-18 13:27:45 | INFO | Learning rates: body=0.0001, Q-readout=0.001
+2026-11-18 13:27:45 | INFO | Replay: 20000 | batch=64 | updates/episode=2
+2026-11-18 13:27:45 | INFO | Solution bounds: True | dynamic sampling: True
+2026-11-18 13:27:45 | INFO | Initial model: checkpoints\16x16_rgnn\initial_model.pt
+2026-11-18 13:27:45 | INFO | Config: checkpoints\16x16_rgnn\config.json
+2026-11-18 13:27:45 | INFO | ==============================================================================
+2026-11-18 13:27:49 | INFO | First graph batch device audit: {'online_parameters': 'cuda:0', 'target_parameters': 'cuda:0', 'graph_relations': 'cuda:0', 'q_input_objects': 'cuda:0'}
+2026-11-18 13:27:49 | INFO | CUDA reverse pass verified; online parameter device type=cuda
+2026-11-18 13:27:49 | INFO | Episode 1/3000 | recent success=100.0% | loss=12.3888 | buffer=295 | updates=2 | category=satisficed | elapsed=3.0s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:29:10 | INFO | Episode 25/3000 | recent success=96.0% | loss=2.9904 | buffer=7495 | updates=50 | category=satisficed | elapsed=1m24s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:30:31 | INFO | Episode 50/3000 | recent success=96.0% | loss=2.6128 | buffer=14504 | updates=100 | category=satisficed | elapsed=2m45s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:32:00 | INFO | Episode 75/3000 | recent success=94.7% | loss=2.6885 | buffer=20000 | updates=150 | category=satisficed | elapsed=4m14s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:33:16 | INFO | Episode 100/3000 | recent success=96.0% | loss=2.6041 | buffer=20000 | updates=200 | category=satisficed | elapsed=5m31s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:42:22 | INFO | Validation @ 100 | success=74.50% (149/200) | PCR=1.0000 | transition_evals=328.79 | unique_state_expansions=114.06 | best=True
+2026-11-18 13:43:37 | INFO | Episode 125/3000 | recent success=96.0% | loss=2.8867 | buffer=20000 | updates=250 | category=satisficed | elapsed=15m52s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:45:01 | INFO | Episode 150/3000 | recent success=96.0% | loss=2.8557 | buffer=20000 | updates=300 | category=satisficed | elapsed=17m16s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:46:12 | INFO | Episode 175/3000 | recent success=96.0% | loss=2.5845 | buffer=20000 | updates=350 | category=satisficed | elapsed=18m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:47:23 | INFO | Episode 200/3000 | recent success=94.0% | loss=2.6959 | buffer=20000 | updates=400 | category=satisficed | elapsed=19m38s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:56:38 | INFO | Validation @ 200 | success=74.50% (149/200) | PCR=1.0000 | transition_evals=328.58 | unique_state_expansions=113.97 | best=True
+2026-11-18 13:57:57 | INFO | Episode 225/3000 | recent success=95.0% | loss=2.8687 | buffer=20000 | updates=450 | category=satisficed | elapsed=30m11s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 13:59:16 | INFO | Episode 250/3000 | recent success=95.0% | loss=2.1486 | buffer=20000 | updates=500 | category=satisficed | elapsed=31m30s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:00:34 | INFO | Episode 275/3000 | recent success=96.0% | loss=1.2542 | buffer=20000 | updates=550 | category=satisficed | elapsed=32m49s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:02:03 | INFO | Episode 300/3000 | recent success=94.0% | loss=0.2320 | buffer=20000 | updates=600 | category=satisficed | elapsed=34m17s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:10:37 | INFO | Validation @ 300 | success=73.50% (147/200) | PCR=1.0000 | transition_evals=324.44 | unique_state_expansions=112.53 | best=False
+2026-11-18 14:12:00 | INFO | Episode 325/3000 | recent success=93.0% | loss=1.4493 | buffer=20000 | updates=650 | category=satisficed | elapsed=44m14s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:13:27 | INFO | Episode 350/3000 | recent success=92.0% | loss=1.0333 | buffer=20000 | updates=700 | category=satisficed | elapsed=45m41s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:14:49 | INFO | Episode 375/3000 | recent success=93.0% | loss=1.3788 | buffer=20000 | updates=750 | category=satisficed | elapsed=47m03s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:16:06 | INFO | Episode 400/3000 | recent success=97.0% | loss=1.3278 | buffer=20000 | updates=800 | category=satisficed | elapsed=48m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:24:56 | INFO | Validation @ 400 | success=74.00% (148/200) | PCR=1.0039 | transition_evals=319.33 | unique_state_expansions=110.78 | best=False
+2026-11-18 14:26:14 | INFO | Episode 425/3000 | recent success=97.0% | loss=0.9816 | buffer=20000 | updates=850 | category=satisficed | elapsed=58m29s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:27:28 | INFO | Episode 450/3000 | recent success=97.0% | loss=0.9146 | buffer=20000 | updates=900 | category=satisficed | elapsed=59m42s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:28:41 | INFO | Episode 475/3000 | recent success=94.0% | loss=0.7830 | buffer=20000 | updates=950 | category=satisficed | elapsed=1h00m56s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:30:00 | INFO | Episode 500/3000 | recent success=93.0% | loss=1.0750 | buffer=20000 | updates=1000 | category=satisficed | elapsed=1h02m14s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:38:30 | INFO | Validation @ 500 | success=74.50% (149/200) | PCR=1.0044 | transition_evals=312.83 | unique_state_expansions=108.54 | best=False
+2026-11-18 14:39:29 | INFO | Episode 525/3000 | recent success=93.0% | loss=3.1895 | buffer=20000 | updates=1050 | category=satisficed | elapsed=1h11m44s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:40:45 | INFO | Episode 550/3000 | recent success=94.0% | loss=1.8019 | buffer=20000 | updates=1100 | category=satisficed | elapsed=1h13m00s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:41:57 | INFO | Episode 575/3000 | recent success=96.0% | loss=2.0859 | buffer=20000 | updates=1150 | category=satisficed | elapsed=1h14m11s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:43:06 | INFO | Episode 600/3000 | recent success=95.0% | loss=1.8201 | buffer=20000 | updates=1200 | category=satisficed | elapsed=1h15m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:51:27 | INFO | Validation @ 600 | success=75.00% (150/200) | PCR=1.0076 | transition_evals=310.07 | unique_state_expansions=107.61 | best=True
+2026-11-18 14:52:45 | INFO | Episode 625/3000 | recent success=95.0% | loss=1.8504 | buffer=20000 | updates=1250 | category=unsolved | elapsed=1h25m00s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:54:06 | INFO | Episode 650/3000 | recent success=93.0% | loss=2.2662 | buffer=20000 | updates=1300 | category=unsolved | elapsed=1h26m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:55:12 | INFO | Episode 675/3000 | recent success=94.0% | loss=2.7435 | buffer=20000 | updates=1350 | category=satisficed | elapsed=1h27m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 14:56:23 | INFO | Episode 700/3000 | recent success=96.0% | loss=2.7146 | buffer=20000 | updates=1400 | category=satisficed | elapsed=1h28m37s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:04:29 | INFO | Validation @ 700 | success=76.00% (152/200) | PCR=1.0100 | transition_evals=306.42 | unique_state_expansions=106.36 | best=True
+2026-11-18 15:05:45 | INFO | Episode 725/3000 | recent success=94.0% | loss=2.1588 | buffer=20000 | updates=1450 | category=satisficed | elapsed=1h37m59s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:06:35 | INFO | Episode 750/3000 | recent success=95.0% | loss=2.8298 | buffer=20000 | updates=1500 | category=solved | elapsed=1h38m49s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:07:33 | INFO | Episode 775/3000 | recent success=94.0% | loss=1.5413 | buffer=20000 | updates=1550 | category=satisficed | elapsed=1h39m48s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:08:32 | INFO | Episode 800/3000 | recent success=92.0% | loss=1.5861 | buffer=20000 | updates=1600 | category=satisficed | elapsed=1h40m46s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:16:57 | INFO | Validation @ 800 | success=76.00% (152/200) | PCR=1.0066 | transition_evals=300.15 | unique_state_expansions=104.00 | best=True
+2026-11-18 15:17:41 | INFO | Episode 825/3000 | recent success=93.0% | loss=2.0187 | buffer=20000 | updates=1650 | category=satisficed | elapsed=1h49m56s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:18:40 | INFO | Episode 850/3000 | recent success=94.0% | loss=1.2955 | buffer=20000 | updates=1700 | category=satisficed | elapsed=1h50m54s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:19:29 | INFO | Episode 875/3000 | recent success=95.0% | loss=1.2977 | buffer=20000 | updates=1750 | category=satisficed | elapsed=1h51m43s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:20:17 | INFO | Episode 900/3000 | recent success=95.0% | loss=2.4169 | buffer=20000 | updates=1800 | category=satisficed | elapsed=1h52m32s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:28:04 | INFO | Validation @ 900 | success=76.00% (152/200) | PCR=1.0079 | transition_evals=296.10 | unique_state_expansions=102.38 | best=False
+2026-11-18 15:28:52 | INFO | Episode 925/3000 | recent success=96.0% | loss=2.4329 | buffer=20000 | updates=1850 | category=solved | elapsed=2h01m06s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:29:37 | INFO | Episode 950/3000 | recent success=97.0% | loss=1.6960 | buffer=20000 | updates=1900 | category=satisficed | elapsed=2h01m51s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:30:28 | INFO | Episode 975/3000 | recent success=95.0% | loss=1.5827 | buffer=20000 | updates=1950 | category=solved | elapsed=2h02m42s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:31:12 | INFO | Episode 1000/3000 | recent success=97.0% | loss=1.8176 | buffer=20000 | updates=2000 | category=solved | elapsed=2h03m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:39:49 | INFO | Validation @ 1000 | success=76.00% (152/200) | PCR=1.0101 | transition_evals=294.81 | unique_state_expansions=101.78 | best=False
+2026-11-18 15:40:38 | INFO | Episode 1025/3000 | recent success=97.0% | loss=2.8197 | buffer=20000 | updates=2050 | category=satisficed | elapsed=2h12m53s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:41:28 | INFO | Episode 1050/3000 | recent success=97.0% | loss=2.0789 | buffer=20000 | updates=2100 | category=satisficed | elapsed=2h13m42s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:42:10 | INFO | Episode 1075/3000 | recent success=99.0% | loss=1.8869 | buffer=20000 | updates=2150 | category=satisficed | elapsed=2h14m24s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:42:56 | INFO | Episode 1100/3000 | recent success=97.0% | loss=4.0784 | buffer=20000 | updates=2200 | category=solved | elapsed=2h15m10s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:51:27 | INFO | Validation @ 1100 | success=76.50% (153/200) | PCR=1.0107 | transition_evals=293.49 | unique_state_expansions=101.27 | best=True
+2026-11-18 15:52:26 | INFO | Episode 1125/3000 | recent success=97.0% | loss=3.6623 | buffer=20000 | updates=2250 | category=satisficed | elapsed=2h24m40s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:53:18 | INFO | Episode 1150/3000 | recent success=97.0% | loss=3.6477 | buffer=20000 | updates=2300 | category=satisficed | elapsed=2h25m33s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:54:07 | INFO | Episode 1175/3000 | recent success=95.0% | loss=2.7320 | buffer=20000 | updates=2350 | category=satisficed | elapsed=2h26m22s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 15:54:45 | INFO | Episode 1200/3000 | recent success=97.0% | loss=1.3964 | buffer=20000 | updates=2400 | category=solved | elapsed=2h26m59s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:02:45 | INFO | Validation @ 1200 | success=76.50% (153/200) | PCR=1.0100 | transition_evals=292.62 | unique_state_expansions=100.90 | best=True
+2026-11-18 16:03:33 | INFO | Episode 1225/3000 | recent success=97.0% | loss=1.6989 | buffer=20000 | updates=2450 | category=satisficed | elapsed=2h35m47s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:04:06 | INFO | Episode 1250/3000 | recent success=96.0% | loss=3.2643 | buffer=20000 | updates=2500 | category=satisficed | elapsed=2h36m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:04:53 | INFO | Episode 1275/3000 | recent success=98.0% | loss=2.9860 | buffer=20000 | updates=2550 | category=solved | elapsed=2h37m08s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:05:38 | INFO | Episode 1300/3000 | recent success=97.0% | loss=1.7407 | buffer=20000 | updates=2600 | category=satisficed | elapsed=2h37m52s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:13:27 | INFO | Validation @ 1300 | success=76.00% (152/200) | PCR=1.0112 | transition_evals=291.19 | unique_state_expansions=100.39 | best=False
+2026-11-18 16:14:25 | INFO | Episode 1325/3000 | recent success=97.0% | loss=2.7276 | buffer=20000 | updates=2650 | category=satisficed | elapsed=2h46m39s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:15:17 | INFO | Episode 1350/3000 | recent success=97.0% | loss=3.4198 | buffer=20000 | updates=2700 | category=solved | elapsed=2h47m31s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:16:02 | INFO | Episode 1375/3000 | recent success=95.0% | loss=2.1168 | buffer=20000 | updates=2750 | category=satisficed | elapsed=2h48m17s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:16:41 | INFO | Episode 1400/3000 | recent success=95.0% | loss=2.1716 | buffer=20000 | updates=2800 | category=solved | elapsed=2h48m56s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:24:26 | INFO | Validation @ 1400 | success=76.00% (152/200) | PCR=1.0132 | transition_evals=291.06 | unique_state_expansions=100.31 | best=False
+2026-11-18 16:25:12 | INFO | Episode 1425/3000 | recent success=95.0% | loss=2.1270 | buffer=20000 | updates=2850 | category=satisficed | elapsed=2h57m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:25:57 | INFO | Episode 1450/3000 | recent success=96.0% | loss=4.4146 | buffer=20000 | updates=2900 | category=satisficed | elapsed=2h58m11s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:26:41 | INFO | Episode 1475/3000 | recent success=98.0% | loss=4.2676 | buffer=20000 | updates=2950 | category=solved | elapsed=2h58m56s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:27:28 | INFO | Episode 1500/3000 | recent success=96.0% | loss=1.7733 | buffer=20000 | updates=3000 | category=satisficed | elapsed=2h59m43s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:35:27 | INFO | Validation @ 1500 | success=76.00% (152/200) | PCR=1.0140 | transition_evals=289.39 | unique_state_expansions=99.72 | best=False
+2026-11-18 16:36:16 | INFO | Episode 1525/3000 | recent success=96.0% | loss=3.1774 | buffer=20000 | updates=3050 | category=solved | elapsed=3h08m30s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:36:59 | INFO | Episode 1550/3000 | recent success=96.0% | loss=1.9880 | buffer=20000 | updates=3100 | category=solved | elapsed=3h09m13s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:37:54 | INFO | Episode 1575/3000 | recent success=94.0% | loss=2.7796 | buffer=20000 | updates=3150 | category=satisficed | elapsed=3h10m08s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:38:50 | INFO | Episode 1600/3000 | recent success=97.0% | loss=3.3304 | buffer=20000 | updates=3200 | category=satisficed | elapsed=3h11m05s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:46:18 | INFO | Validation @ 1600 | success=75.50% (151/200) | PCR=1.0201 | transition_evals=289.48 | unique_state_expansions=99.75 | best=False
+2026-11-18 16:47:08 | INFO | Episode 1625/3000 | recent success=98.0% | loss=2.2879 | buffer=20000 | updates=3250 | category=satisficed | elapsed=3h19m23s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:47:57 | INFO | Episode 1650/3000 | recent success=97.0% | loss=2.4673 | buffer=20000 | updates=3300 | category=satisficed | elapsed=3h20m11s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:48:49 | INFO | Episode 1675/3000 | recent success=99.0% | loss=3.7243 | buffer=20000 | updates=3350 | category=satisficed | elapsed=3h21m03s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:49:44 | INFO | Episode 1700/3000 | recent success=98.0% | loss=3.0230 | buffer=20000 | updates=3400 | category=solved | elapsed=3h21m58s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 16:58:25 | INFO | Validation @ 1700 | success=75.50% (151/200) | PCR=1.0221 | transition_evals=288.93 | unique_state_expansions=99.56 | best=False
+2026-11-18 16:59:12 | INFO | Episode 1725/3000 | recent success=97.0% | loss=3.0751 | buffer=20000 | updates=3450 | category=satisficed | elapsed=3h31m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:00:14 | INFO | Episode 1750/3000 | recent success=96.0% | loss=3.4482 | buffer=20000 | updates=3500 | category=satisficed | elapsed=3h32m28s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:01:03 | INFO | Episode 1775/3000 | recent success=96.0% | loss=1.9102 | buffer=20000 | updates=3550 | category=satisficed | elapsed=3h33m17s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:01:49 | INFO | Episode 1800/3000 | recent success=96.0% | loss=7.2203 | buffer=20000 | updates=3600 | category=satisficed | elapsed=3h34m04s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:10:10 | INFO | Validation @ 1800 | success=75.50% (151/200) | PCR=1.0224 | transition_evals=288.19 | unique_state_expansions=99.28 | best=False
+2026-11-18 17:10:45 | INFO | Episode 1825/3000 | recent success=97.0% | loss=4.4506 | buffer=20000 | updates=3650 | category=solved | elapsed=3h43m00s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:11:39 | INFO | Episode 1850/3000 | recent success=98.0% | loss=6.8095 | buffer=20000 | updates=3700 | category=satisficed | elapsed=3h43m53s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:12:22 | INFO | Episode 1875/3000 | recent success=98.0% | loss=4.1382 | buffer=20000 | updates=3750 | category=satisficed | elapsed=3h44m36s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:13:20 | INFO | Episode 1900/3000 | recent success=96.0% | loss=5.6459 | buffer=20000 | updates=3800 | category=unsolved | elapsed=3h45m34s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:21:37 | INFO | Validation @ 1900 | success=75.50% (151/200) | PCR=1.0199 | transition_evals=287.74 | unique_state_expansions=99.15 | best=False
+2026-11-18 17:22:27 | INFO | Episode 1925/3000 | recent success=95.0% | loss=3.8444 | buffer=20000 | updates=3850 | category=satisficed | elapsed=3h54m42s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:23:07 | INFO | Episode 1950/3000 | recent success=95.0% | loss=7.4885 | buffer=20000 | updates=3900 | category=solved | elapsed=3h55m22s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:24:01 | INFO | Episode 1975/3000 | recent success=93.0% | loss=4.6258 | buffer=20000 | updates=3950 | category=satisficed | elapsed=3h56m16s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:25:03 | INFO | Episode 2000/3000 | recent success=94.0% | loss=3.9515 | buffer=20000 | updates=4000 | category=satisficed | elapsed=3h57m18s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:33:20 | INFO | Validation @ 2000 | success=75.50% (151/200) | PCR=1.0220 | transition_evals=287.88 | unique_state_expansions=99.18 | best=False
+2026-11-18 17:34:12 | INFO | Episode 2025/3000 | recent success=95.0% | loss=4.3227 | buffer=20000 | updates=4050 | category=solved | elapsed=4h06m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:34:59 | INFO | Episode 2050/3000 | recent success=93.0% | loss=3.9662 | buffer=20000 | updates=4100 | category=solved | elapsed=4h07m13s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:35:38 | INFO | Episode 2075/3000 | recent success=95.0% | loss=7.9026 | buffer=20000 | updates=4150 | category=solved | elapsed=4h07m53s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:36:23 | INFO | Episode 2100/3000 | recent success=96.0% | loss=2.4518 | buffer=20000 | updates=4200 | category=solved | elapsed=4h08m37s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:43:44 | INFO | Validation @ 2100 | success=75.50% (151/200) | PCR=1.0220 | transition_evals=287.00 | unique_state_expansions=98.88 | best=False
+2026-11-18 17:44:50 | INFO | Episode 2125/3000 | recent success=94.0% | loss=11.1670 | buffer=20000 | updates=4250 | category=satisficed | elapsed=4h17m04s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:45:28 | INFO | Episode 2150/3000 | recent success=97.0% | loss=5.9733 | buffer=20000 | updates=4300 | category=satisficed | elapsed=4h17m42s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:46:20 | INFO | Episode 2175/3000 | recent success=97.0% | loss=12.7245 | buffer=20000 | updates=4350 | category=satisficed | elapsed=4h18m34s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:47:24 | INFO | Episode 2200/3000 | recent success=97.0% | loss=7.4387 | buffer=20000 | updates=4400 | category=satisficed | elapsed=4h19m38s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:55:30 | INFO | Validation @ 2200 | success=76.50% (153/200) | PCR=1.0239 | transition_evals=287.12 | unique_state_expansions=98.89 | best=False
+2026-11-18 17:56:22 | INFO | Episode 2225/3000 | recent success=99.0% | loss=7.4926 | buffer=20000 | updates=4450 | category=satisficed | elapsed=4h28m36s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:57:00 | INFO | Episode 2250/3000 | recent success=99.0% | loss=8.8358 | buffer=20000 | updates=4500 | category=satisficed | elapsed=4h29m14s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:57:42 | INFO | Episode 2275/3000 | recent success=99.0% | loss=4.3112 | buffer=20000 | updates=4550 | category=solved | elapsed=4h29m56s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 17:58:42 | INFO | Episode 2300/3000 | recent success=99.0% | loss=10.5947 | buffer=20000 | updates=4600 | category=satisficed | elapsed=4h30m56s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:05:30 | INFO | Validation @ 2300 | success=75.50% (151/200) | PCR=1.0254 | transition_evals=286.37 | unique_state_expansions=98.62 | best=False
+2026-11-18 18:06:16 | INFO | Episode 2325/3000 | recent success=97.0% | loss=4.2035 | buffer=20000 | updates=4650 | category=solved | elapsed=4h38m31s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:07:04 | INFO | Episode 2350/3000 | recent success=96.0% | loss=6.3673 | buffer=20000 | updates=4700 | category=satisficed | elapsed=4h39m19s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:08:00 | INFO | Episode 2375/3000 | recent success=96.0% | loss=5.7564 | buffer=20000 | updates=4750 | category=solved | elapsed=4h40m14s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:08:57 | INFO | Episode 2400/3000 | recent success=96.0% | loss=8.1350 | buffer=20000 | updates=4800 | category=satisficed | elapsed=4h41m12s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:16:30 | INFO | Validation @ 2400 | success=75.50% (151/200) | PCR=1.0264 | transition_evals=286.62 | unique_state_expansions=98.71 | best=False
+2026-11-18 18:17:23 | INFO | Episode 2425/3000 | recent success=97.0% | loss=16.1749 | buffer=20000 | updates=4850 | category=solved | elapsed=4h49m37s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:18:12 | INFO | Episode 2450/3000 | recent success=97.0% | loss=19.5446 | buffer=20000 | updates=4900 | category=satisficed | elapsed=4h50m26s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:19:00 | INFO | Episode 2475/3000 | recent success=97.0% | loss=6.3075 | buffer=20000 | updates=4950 | category=solved | elapsed=4h51m14s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:20:02 | INFO | Episode 2500/3000 | recent success=96.0% | loss=12.1358 | buffer=20000 | updates=5000 | category=unsolved | elapsed=4h52m17s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:28:04 | INFO | Validation @ 2500 | success=75.50% (151/200) | PCR=1.0320 | transition_evals=286.19 | unique_state_expansions=98.58 | best=False
+2026-11-18 18:29:04 | INFO | Episode 2525/3000 | recent success=96.0% | loss=3.9402 | buffer=20000 | updates=5050 | category=satisficed | elapsed=5h01m18s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:30:13 | INFO | Episode 2550/3000 | recent success=93.0% | loss=19.8197 | buffer=20000 | updates=5100 | category=unsolved | elapsed=5h02m27s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:31:10 | INFO | Episode 2575/3000 | recent success=93.0% | loss=10.3970 | buffer=20000 | updates=5150 | category=satisficed | elapsed=5h03m24s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:31:50 | INFO | Episode 2600/3000 | recent success=93.0% | loss=4.0111 | buffer=20000 | updates=5200 | category=satisficed | elapsed=5h04m05s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:40:12 | INFO | Validation @ 2600 | success=75.50% (151/200) | PCR=1.0250 | transition_evals=285.25 | unique_state_expansions=98.27 | best=False
+2026-11-18 18:41:05 | INFO | Episode 2625/3000 | recent success=90.0% | loss=4.7924 | buffer=20000 | updates=5250 | category=unsolved | elapsed=5h13m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:42:06 | INFO | Episode 2650/3000 | recent success=91.0% | loss=9.8359 | buffer=20000 | updates=5300 | category=satisficed | elapsed=5h14m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:43:05 | INFO | Episode 2675/3000 | recent success=90.0% | loss=3.4989 | buffer=20000 | updates=5350 | category=satisficed | elapsed=5h15m20s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:43:55 | INFO | Episode 2700/3000 | recent success=92.0% | loss=3.8078 | buffer=20000 | updates=5400 | category=solved | elapsed=5h16m10s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:52:06 | INFO | Validation @ 2700 | success=75.50% (151/200) | PCR=1.0280 | transition_evals=287.00 | unique_state_expansions=98.82 | best=False
+2026-11-18 18:52:47 | INFO | Episode 2725/3000 | recent success=95.0% | loss=6.5577 | buffer=20000 | updates=5450 | category=solved | elapsed=5h25m01s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:53:45 | INFO | Episode 2750/3000 | recent success=96.0% | loss=22.8545 | buffer=20000 | updates=5500 | category=satisficed | elapsed=5h25m59s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:54:38 | INFO | Episode 2775/3000 | recent success=93.0% | loss=10.1465 | buffer=20000 | updates=5550 | category=solved | elapsed=5h26m53s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 18:55:33 | INFO | Episode 2800/3000 | recent success=91.0% | loss=6.3827 | buffer=20000 | updates=5600 | category=solved | elapsed=5h27m47s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:03:44 | INFO | Validation @ 2800 | success=76.00% (152/200) | PCR=1.0230 | transition_evals=286.25 | unique_state_expansions=98.59 | best=False
+2026-11-18 19:04:55 | INFO | Episode 2825/3000 | recent success=91.0% | loss=18.0222 | buffer=20000 | updates=5650 | category=satisficed | elapsed=5h37m09s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:05:53 | INFO | Episode 2850/3000 | recent success=92.0% | loss=9.4335 | buffer=20000 | updates=5700 | category=satisficed | elapsed=5h38m07s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:06:35 | INFO | Episode 2875/3000 | recent success=96.0% | loss=16.5889 | buffer=20000 | updates=5750 | category=satisficed | elapsed=5h38m49s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:07:24 | INFO | Episode 2900/3000 | recent success=96.0% | loss=6.2183 | buffer=20000 | updates=5800 | category=satisficed | elapsed=5h39m38s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:15:45 | INFO | Validation @ 2900 | success=75.50% (151/200) | PCR=1.0228 | transition_evals=285.94 | unique_state_expansions=98.48 | best=False
+2026-11-18 19:16:27 | INFO | Episode 2925/3000 | recent success=96.0% | loss=9.0114 | buffer=20000 | updates=5850 | category=satisficed | elapsed=5h48m41s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:17:15 | INFO | Episode 2950/3000 | recent success=95.0% | loss=10.5944 | buffer=20000 | updates=5900 | category=solved | elapsed=5h49m30s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:17:52 | INFO | Episode 2975/3000 | recent success=94.0% | loss=6.2420 | buffer=20000 | updates=5950 | category=solved | elapsed=5h50m06s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:18:40 | INFO | Episode 3000/3000 | recent success=96.0% | loss=13.9647 | buffer=20000 | updates=6000 | category=satisficed | elapsed=5h50m54s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 19:27:14 | INFO | Validation @ 3000 | success=76.00% (152/200) | PCR=1.0236 | transition_evals=285.43 | unique_state_expansions=98.31 | best=False
+2026-11-18 19:27:14 | INFO | Training complete in 5h59m28s
+2026-11-18 19:27:14 | INFO | Peak allocated GPU memory: 606.47 MiB
+2026-11-18 19:27:14 | INFO | Best validation: {'num_instances': 200, 'num_solved': 153, 'success_rate': 76.5, 'mean_pcr_successful': 1.0099863228469816, 'mean_path_cost_successful': 74.85620915032679, 'mean_unique_state_expansions': 100.9, 'mean_reexpansions': 0.0, 'mean_transition_evaluations': 292.615}
+2026-11-18 19:27:14 | INFO | Initial checkpoint: checkpoints\16x16_rgnn\initial_model.pt
+2026-11-18 19:27:14 | INFO | Best checkpoint: checkpoints\16x16_rgnn\best_model.pt
+2026-11-18 19:27:14 | INFO | Last checkpoint: checkpoints\16x16_rgnn\last_model.pt

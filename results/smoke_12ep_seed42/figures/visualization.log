@@ -1,0 +1,10 @@
+2026-11-18 13:02:17 | INFO | Saved results\smoke_12ep_seed42\figures\training_loss.png
+2026-11-18 13:02:17 | INFO | Saved results\smoke_12ep_seed42\figures\validation_success_rate.png
+2026-11-18 13:02:18 | INFO | Saved results\smoke_12ep_seed42\figures\validation_weighted_path_cost_ratio.png
+2026-11-18 13:02:18 | INFO | Saved results\smoke_12ep_seed42\figures\validation_transition_evaluations.png
+2026-11-18 13:02:18 | INFO | Saved results\smoke_12ep_seed42\figures\test_success_rate.png
+2026-11-18 13:02:19 | INFO | Saved results\smoke_12ep_seed42\figures\test_weighted_path_cost_ratio.png
+2026-11-18 13:02:19 | INFO | Saved results\smoke_12ep_seed42\figures\test_unique_state_expansions.png
+2026-11-18 13:02:19 | INFO | Saved results\smoke_12ep_seed42\figures\test_transition_evaluations.png
+2026-11-18 13:02:20 | INFO | Saved results\smoke_12ep_seed42\figures\test_search_time.png
+2026-11-18 13:02:20 | INFO | Generated 9 V2 figures in results\smoke_12ep_seed42\figures

@@ -1,0 +1,101 @@
+algorithm,instance_id,structure,success,path_cost,optimal_cost,pcr,unique_state_expansions,reexpansions,transition_evaluations,search_time_ms,gnn_inference_time_ms,failure_reason,budget_limited
+Dijkstra,0,loop_maze,True,53.0,53.0,1.0,56,0,133,0.714800029527396,0.0,,False
+A* + Manhattan,0,loop_maze,True,53.0,53.0,1.0,54,0,129,1.0152000468224287,0.0,,True
+WA* + Manhattan,0,loop_maze,True,53.0,53.0,1.0,51,0,120,0.8431000169366598,0.0,,True
+Untrained R-GNN + WA*,0,loop_maze,True,53.0,53.0,1.0,57,0,135,1221.1181999882683,1084.2997996369377,,True
+Trained GSP-RGNN + WA*,0,loop_maze,True,53.0,53.0,1.0,58,0,137,1242.0251999865286,1098.4723000437953,,True
+Dijkstra,1,rooms_corridors,True,14.0,14.0,1.0,37,0,123,0.5498999962583184,0.0,,False
+A* + Manhattan,1,rooms_corridors,True,14.0,14.0,1.0,12,0,41,0.35749998642131686,0.0,,True
+WA* + Manhattan,1,rooms_corridors,True,14.0,14.0,1.0,10,0,33,0.29150000773370266,0.0,,True
+Untrained R-GNN + WA*,1,rooms_corridors,True,14.0,14.0,1.0,48,0,160,1065.1330000255257,933.797899982892,,True
+Trained GSP-RGNN + WA*,1,rooms_corridors,True,14.0,14.0,1.0,43,0,143,946.4024000335485,829.256700235419,,True
+Dijkstra,2,rooms_corridors,True,26.0,26.0,1.0,60,0,182,0.7065000245347619,0.0,,False
+A* + Manhattan,2,rooms_corridors,True,26.0,26.0,1.0,46,0,147,0.8481999975629151,0.0,,True
+WA* + Manhattan,2,rooms_corridors,False,,26.0,,141,0,449,2.3384999949485064,0.0,frontier_exhausted,True
+Untrained R-GNN + WA*,2,rooms_corridors,True,26.0,26.0,1.0,61,0,186,1306.9865999859758,1156.7708000657149,,True
+Trained GSP-RGNN + WA*,2,rooms_corridors,True,26.0,26.0,1.0,62,0,188,1343.2435999857262,1184.044099820312,,True
+Dijkstra,3,loop_maze,True,72.0,72.0,1.0,136,0,308,1.2175000156275928,0.0,,False
+A* + Manhattan,3,loop_maze,True,72.0,72.0,1.0,116,0,268,1.7281000036746264,0.0,,True
+WA* + Manhattan,3,loop_maze,True,72.0,72.0,1.0,89,0,210,1.325800025369972,0.0,,True
+Untrained R-GNN + WA*,3,loop_maze,True,72.0,72.0,1.0,135,0,306,2863.5197000112385,2551.530000346247,,True
+Trained GSP-RGNN + WA*,3,loop_maze,True,72.0,72.0,1.0,135,0,306,2842.9467999958433,2539.324799843598,,True
+Dijkstra,4,branching_maze,True,122.0,122.0,1.0,105,0,210,0.9340000106021762,0.0,,False
+A* + Manhattan,4,branching_maze,True,122.0,122.0,1.0,104,0,208,1.4526000013574958,0.0,,True
+WA* + Manhattan,4,branching_maze,True,122.0,122.0,1.0,104,0,208,1.406800001859665,0.0,,True
+Untrained R-GNN + WA*,4,branching_maze,True,122.0,122.0,1.0,105,0,210,2203.9327999809757,1972.6632997044362,,True
+Trained GSP-RGNN + WA*,4,branching_maze,True,122.0,122.0,1.0,105,0,210,2200.0876999809407,1969.0083996392787,,True
+Dijkstra,5,rooms_corridors,True,52.0,52.0,1.0,172,0,561,1.7130000051110983,0.0,,False
+A* + Manhattan,5,rooms_corridors,True,52.0,52.0,1.0,140,0,468,2.4148999946191907,0.0,,True
+WA* + Manhattan,5,rooms_corridors,True,56.0,52.0,1.0769230769230769,99,0,330,1.712299999780953,0.0,,True
+Untrained R-GNN + WA*,5,rooms_corridors,False,,52.0,,156,0,511,8160.13929998735,7289.360800292343,transition_budget,True
+Trained GSP-RGNN + WA*,5,rooms_corridors,False,,52.0,,156,0,511,6243.616099993233,5565.434300282504,transition_budget,True
+Dijkstra,6,u_detour,True,51.0,51.0,1.0,223,0,793,2.2137999767437577,0.0,,False
+A* + Manhattan,6,u_detour,False,,51.0,,145,0,512,2.6390000130049884,0.0,transition_budget,True
+WA* + Manhattan,6,u_detour,False,,51.0,,145,0,512,2.5434999843128026,0.0,transition_budget,True
+Untrained R-GNN + WA*,6,u_detour,False,,51.0,,142,0,511,3002.4497999693267,2663.193400076125,transition_budget,True
+Trained GSP-RGNN + WA*,6,u_detour,False,,51.0,,142,0,511,3009.72080003703,2671.3450996903703,transition_budget,True
+Dijkstra,7,u_detour,True,55.0,55.0,1.0,208,0,733,2.1277000196278095,0.0,,False
+A* + Manhattan,7,u_detour,False,,55.0,,147,0,512,2.5868999655358493,0.0,transition_budget,True
+WA* + Manhattan,7,u_detour,False,,55.0,,145,0,511,2.549899974837899,0.0,transition_budget,True
+Untrained R-GNN + WA*,7,u_detour,False,,55.0,,145,0,512,3072.8265999932773,2726.238300325349,transition_budget,True
+Trained GSP-RGNN + WA*,7,u_detour,False,,55.0,,145,0,512,3107.253599970136,2751.057300309185,transition_budget,True
+Dijkstra,8,branching_maze,True,109.0,109.0,1.0,76,0,152,0.755899993237108,0.0,,False
+A* + Manhattan,8,branching_maze,True,109.0,109.0,1.0,71,0,143,1.005800033453852,0.0,,True
+WA* + Manhattan,8,branching_maze,True,109.0,109.0,1.0,63,0,127,0.8882000111043453,0.0,,True
+Untrained R-GNN + WA*,8,branching_maze,True,109.0,109.0,1.0,77,0,154,1627.3348999675363,1453.4171003033407,,True
+Trained GSP-RGNN + WA*,8,branching_maze,True,109.0,109.0,1.0,77,0,154,1627.7240999625064,1454.18029994471,,True
+Dijkstra,9,random_obstacle,True,10.0,10.0,1.0,16,0,54,0.3412999794818461,0.0,,False
+A* + Manhattan,9,random_obstacle,True,10.0,10.0,1.0,9,0,29,0.27350004529580474,0.0,,True
+WA* + Manhattan,9,random_obstacle,True,10.0,10.0,1.0,5,0,17,0.1832999987527728,0.0,,True
+Untrained R-GNN + WA*,9,random_obstacle,True,10.0,10.0,1.0,13,0,43,282.2209000005387,244.60599984740838,,True
+Trained GSP-RGNN + WA*,9,random_obstacle,True,10.0,10.0,1.0,14,0,47,307.2762999800034,264.4154999870807,,True
+Dijkstra,10,branching_maze,True,75.0,75.0,1.0,58,0,118,0.5943999858573079,0.0,,False
+A* + Manhattan,10,branching_maze,True,75.0,75.0,1.0,50,0,102,0.7541000377386808,0.0,,True
+WA* + Manhattan,10,branching_maze,True,75.0,75.0,1.0,39,0,80,0.6068000220693648,0.0,,True
+Untrained R-GNN + WA*,10,branching_maze,True,75.0,75.0,1.0,58,0,118,1225.710699975025,1093.9972001942806,,True
+Trained GSP-RGNN + WA*,10,branching_maze,True,75.0,75.0,1.0,58,0,118,1223.007399996277,1090.0908001349308,,True
+Dijkstra,11,loop_maze,True,47.0,47.0,1.0,75,0,190,0.7827000226825476,0.0,,False
+A* + Manhattan,11,loop_maze,True,47.0,47.0,1.0,52,0,131,0.8815000182949007,0.0,,True
+WA* + Manhattan,11,loop_maze,True,47.0,47.0,1.0,31,0,82,0.5449000163935125,0.0,,True
+Untrained R-GNN + WA*,11,loop_maze,True,47.0,47.0,1.0,82,0,204,1730.0129999639466,1541.991899954155,,True
+Trained GSP-RGNN + WA*,11,loop_maze,True,47.0,47.0,1.0,79,0,198,1661.7871000198647,1483.3628002088517,,True
+Dijkstra,12,random_obstacle,True,5.0,5.0,1.0,4,0,11,0.22139999782666564,0.0,,False
+A* + Manhattan,12,random_obstacle,True,5.0,5.0,1.0,2,0,6,0.14709995593875647,0.0,,True
+WA* + Manhattan,12,random_obstacle,True,5.0,5.0,1.0,1,0,3,0.10070001007989049,0.0,,True
+Untrained R-GNN + WA*,12,random_obstacle,True,5.0,5.0,1.0,3,0,10,74.10010002786294,58.282500016503036,,True
+Trained GSP-RGNN + WA*,12,random_obstacle,True,5.0,5.0,1.0,1,0,3,29.016500047873706,18.47870001802221,,True
+Dijkstra,13,random_obstacle,True,20.0,20.0,1.0,41,0,114,0.59710000641644,0.0,,False
+A* + Manhattan,13,random_obstacle,True,20.0,20.0,1.0,32,0,89,0.6050000083632767,0.0,,True
+WA* + Manhattan,13,random_obstacle,True,20.0,20.0,1.0,20,0,62,0.41769997915253043,0.0,,True
+Untrained R-GNN + WA*,13,random_obstacle,True,20.0,20.0,1.0,47,0,132,995.7935999846086,883.9057000004686,,True
+Trained GSP-RGNN + WA*,13,random_obstacle,True,20.0,20.0,1.0,47,0,131,988.6944000027142,878.2936001662165,,True
+Dijkstra,14,rooms_corridors,True,41.0,41.0,1.0,121,0,388,1.2605999945662916,0.0,,False
+A* + Manhattan,14,rooms_corridors,True,41.0,41.0,1.0,79,0,249,1.421599998138845,0.0,,True
+WA* + Manhattan,14,rooms_corridors,True,41.0,41.0,1.0,43,0,137,0.8007999858818948,0.0,,True
+Untrained R-GNN + WA*,14,rooms_corridors,True,41.0,41.0,1.0,111,0,356,2334.5231999992393,2078.22570001008,,True
+Trained GSP-RGNN + WA*,14,rooms_corridors,True,41.0,41.0,1.0,110,0,351,2325.148700037971,2070.239399909042,,True
+Dijkstra,15,branching_maze,True,103.0,103.0,1.0,91,0,183,0.8853999897837639,0.0,,False
+A* + Manhattan,15,branching_maze,True,103.0,103.0,1.0,85,0,171,1.2303999974392354,0.0,,True
+WA* + Manhattan,15,branching_maze,True,103.0,103.0,1.0,69,0,140,0.9840000420808792,0.0,,True
+Untrained R-GNN + WA*,15,branching_maze,True,103.0,103.0,1.0,91,0,183,1912.549400003627,1715.714999998454,,True
+Trained GSP-RGNN + WA*,15,branching_maze,True,103.0,103.0,1.0,91,0,183,1911.789999983739,1712.6294003683142,,True
+Dijkstra,16,u_detour,True,67.0,67.0,1.0,218,0,766,2.1772999898530543,0.0,,False
+A* + Manhattan,16,u_detour,False,,67.0,,148,0,511,2.604000037536025,0.0,transition_budget,True
+WA* + Manhattan,16,u_detour,False,,67.0,,147,0,512,2.629099995829165,0.0,transition_budget,True
+Untrained R-GNN + WA*,16,u_detour,False,,67.0,,147,0,512,3143.744900007732,2788.6314003844745,transition_budget,True
+Trained GSP-RGNN + WA*,16,u_detour,False,,67.0,,147,0,512,3147.6637999876402,2792.949199967552,transition_budget,True
+Dijkstra,17,random_obstacle,True,31.0,31.0,1.0,146,0,458,1.4665999915450811,0.0,,False
+A* + Manhattan,17,random_obstacle,True,31.0,31.0,1.0,82,0,276,1.520699996035546,0.0,,True
+WA* + Manhattan,17,random_obstacle,True,31.0,31.0,1.0,25,0,89,0.5565999890677631,0.0,,True
+Untrained R-GNN + WA*,17,random_obstacle,True,31.0,31.0,1.0,152,0,476,3243.4478999930434,2882.700700080022,,True
+Trained GSP-RGNN + WA*,17,random_obstacle,True,31.0,31.0,1.0,149,0,467,3180.9519000235014,2821.6716999886557,,True
+Dijkstra,18,u_detour,True,53.0,53.0,1.0,181,0,637,1.81940000038594,0.0,,False
+A* + Manhattan,18,u_detour,False,,53.0,,145,0,510,2.6153000071644783,0.0,transition_budget,True
+WA* + Manhattan,18,u_detour,True,57.0,53.0,1.0754716981132075,119,0,429,2.1572000114247203,0.0,,True
+Untrained R-GNN + WA*,18,u_detour,False,,53.0,,146,0,512,3149.3921000510454,2787.9565993789583,transition_budget,True
+Trained GSP-RGNN + WA*,18,u_detour,False,,53.0,,145,0,510,7130.128199991304,6308.080499991775,transition_budget,True
+Dijkstra,19,loop_maze,True,95.0,95.0,1.0,135,0,295,1.5460000140592456,0.0,,False
+A* + Manhattan,19,loop_maze,True,95.0,95.0,1.0,130,0,284,2.076899982057512,0.0,,True
+WA* + Manhattan,19,loop_maze,True,119.0,95.0,1.2526315789473683,121,0,263,1.9641000544652343,0.0,,True
+Untrained R-GNN + WA*,19,loop_maze,True,95.0,95.0,1.0,134,0,293,4104.740900045726,3654.6642996254377,,True
+Trained GSP-RGNN + WA*,19,loop_maze,True,95.0,95.0,1.0,135,0,295,2850.6461000069976,2546.721499529667,,True

@@ -1,0 +1,354 @@
+{
+  "format_version": 2,
+  "created_at_utc": "2026-11-18T05:23:58.681114+00:00",
+  "project": "GSP-Reproduction-V2",
+  "environment": "16x16 weighted maze; walls=0, terrain=1/3/5",
+  "structures": [
+    "random_obstacle",
+    "rooms_corridors",
+    "u_detour",
+    "branching_maze",
+    "loop_maze"
+  ],
+  "config": {
+    "height": 16,
+    "width": 16,
+    "num_actions": 4,
+    "terrain_values": [
+      1,
+      3,
+      5
+    ],
+    "terrain_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "num_train_instances": 1000,
+    "num_validation_instances": 200,
+    "num_test_instances": 300,
+    "generator_seed": 42,
+    "train_seed_offset": 0,
+    "validation_seed_offset": 100003,
+    "test_seed_offset": 200003,
+    "random_obstacle_min_ratio": 0.2,
+    "random_obstacle_max_ratio": 0.3,
+    "max_generation_attempts_per_instance": 200,
+    "structure_count": 5,
+    "embedding_dim": 32,
+    "gnn_layers": 4,
+    "message_hidden_dim": 64,
+    "smoothmax_beta": 1.0,
+    "q_readout_hidden_dim": 64,
+    "graph_cache_size": 8192,
+    "wa_star_weight": 2.0,
+    "transition_budget": 512,
+    "dead_end_return": -2048.0,
+    "training_seed": 42,
+    "episodes": 3000,
+    "replay_capacity": 20000,
+    "batch_size": 64,
+    "updates_per_episode": 2,
+    "gamma": 1.0,
+    "target_update_interval": 200,
+    "gradient_clip_norm": 1.0,
+    "validation_interval": 100,
+    "body_learning_rate": 0.0001,
+    "q_readout_learning_rate": 0.001,
+    "use_solution_bounds": true,
+    "use_instance_sampling": true,
+    "unsolved_weight": 1.0,
+    "solved_weight": 2.0,
+    "satisficed_weight": 4.0,
+    "device": "cuda:0",
+    "data_dir": "data/16x16_rgnn",
+    "checkpoint_dir": "checkpoints/16x16_rgnn",
+    "log_dir": "logs/16x16_rgnn",
+    "results_dir": "results/16x16_rgnn",
+    "figures_dir": "results/16x16_rgnn/figures",
+    "evaluation_split": "test"
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "path": "data\\16x16_rgnn\\train.npz",
+      "generator_seed": 42,
+      "requested_count": 1000,
+      "actual_count": 1000,
+      "structure_counts": {
+        "random_obstacle": 200,
+        "rooms_corridors": 200,
+        "u_detour": 200,
+        "branching_maze": 200,
+        "loop_maze": 200
+      },
+      "generation_stats": {
+        "attempts": 1031,
+        "accepted": 1000,
+        "rejected_structure": 31,
+        "rejected_duplicate": 0,
+        "rejected_disconnected": 0,
+        "per_structure_attempts": {
+          "random_obstacle": 210,
+          "rooms_corridors": 221,
+          "u_detour": 200,
+          "branching_maze": 200,
+          "loop_maze": 200
+        }
+      },
+      "terrain": {
+        "values": [
+          1,
+          3,
+          5
+        ],
+        "total_free_cells_by_terrain": [
+          60508,
+          60799,
+          60195
+        ],
+        "overall_ratios_by_terrain": [
+          0.3333737369285187,
+          0.33497702504655597,
+          0.33164923802492535
+        ],
+        "wall_ratio": {
+          "min": 0.0546875,
+          "max": 0.50390625,
+          "mean": 0.2910078125
+        }
+      },
+      "bfs_steps": {
+        "min": 1.0,
+        "max": 96.0,
+        "mean": 25.692
+      },
+      "optimal_cost": {
+        "min": 3.0,
+        "max": 296.0,
+        "mean": 70.964
+      },
+      "per_structure": {
+        "random_obstacle": {
+          "requested": 200,
+          "accepted": 200,
+          "attempts": 210
+        },
+        "rooms_corridors": {
+          "requested": 200,
+          "accepted": 200,
+          "attempts": 221
+        },
+        "u_detour": {
+          "requested": 200,
+          "accepted": 200,
+          "attempts": 200
+        },
+        "branching_maze": {
+          "requested": 200,
+          "accepted": 200,
+          "attempts": 200
+        },
+        "loop_maze": {
+          "requested": 200,
+          "accepted": 200,
+          "attempts": 200
+        }
+      }
+    },
+    "validation": {
+      "split": "validation",
+      "path": "data\\16x16_rgnn\\validation.npz",
+      "generator_seed": 100045,
+      "requested_count": 200,
+      "actual_count": 200,
+      "structure_counts": {
+        "random_obstacle": 40,
+        "rooms_corridors": 40,
+        "u_detour": 40,
+        "branching_maze": 40,
+        "loop_maze": 40
+      },
+      "generation_stats": {
+        "attempts": 207,
+        "accepted": 200,
+        "rejected_structure": 7,
+        "rejected_duplicate": 0,
+        "rejected_disconnected": 0,
+        "per_structure_attempts": {
+          "random_obstacle": 44,
+          "rooms_corridors": 43,
+          "u_detour": 40,
+          "branching_maze": 40,
+          "loop_maze": 40
+        }
+      },
+      "terrain": {
+        "values": [
+          1,
+          3,
+          5
+        ],
+        "total_free_cells_by_terrain": [
+          12072,
+          12143,
+          12058
+        ],
+        "overall_ratios_by_terrain": [
+          0.33280952774791167,
+          0.3347669065144874,
+          0.33242356573760096
+        ],
+        "wall_ratio": {
+          "min": 0.0625,
+          "max": 0.50390625,
+          "mean": 0.29154296875
+        }
+      },
+      "bfs_steps": {
+        "min": 3.0,
+        "max": 96.0,
+        "mean": 25.91
+      },
+      "optimal_cost": {
+        "min": 7.0,
+        "max": 274.0,
+        "mean": 70.63
+      },
+      "per_structure": {
+        "random_obstacle": {
+          "requested": 40,
+          "accepted": 40,
+          "attempts": 44
+        },
+        "rooms_corridors": {
+          "requested": 40,
+          "accepted": 40,
+          "attempts": 43
+        },
+        "u_detour": {
+          "requested": 40,
+          "accepted": 40,
+          "attempts": 40
+        },
+        "branching_maze": {
+          "requested": 40,
+          "accepted": 40,
+          "attempts": 40
+        },
+        "loop_maze": {
+          "requested": 40,
+          "accepted": 40,
+          "attempts": 40
+        }
+      }
+    },
+    "test": {
+      "split": "test",
+      "path": "data\\16x16_rgnn\\test.npz",
+      "generator_seed": 200045,
+      "requested_count": 300,
+      "actual_count": 300,
+      "structure_counts": {
+        "random_obstacle": 60,
+        "rooms_corridors": 60,
+        "u_detour": 60,
+        "branching_maze": 60,
+        "loop_maze": 60
+      },
+      "generation_stats": {
+        "attempts": 305,
+        "accepted": 300,
+        "rejected_structure": 5,
+        "rejected_duplicate": 0,
+        "rejected_disconnected": 0,
+        "per_structure_attempts": {
+          "random_obstacle": 62,
+          "rooms_corridors": 63,
+          "u_detour": 60,
+          "branching_maze": 60,
+          "loop_maze": 60
+        }
+      },
+      "terrain": {
+        "values": [
+          1,
+          3,
+          5
+        ],
+        "total_free_cells_by_terrain": [
+          18338,
+          17914,
+          18318
+        ],
+        "overall_ratios_by_terrain": [
+          0.3360454462158695,
+          0.32827560930914423,
+          0.33567894447498625
+        ],
+        "wall_ratio": {
+          "min": 0.0546875,
+          "max": 0.50390625,
+          "mean": 0.289453125
+        }
+      },
+      "bfs_steps": {
+        "min": 1.0,
+        "max": 92.0,
+        "mean": 25.636666666666667
+      },
+      "optimal_cost": {
+        "min": 5.0,
+        "max": 283.0,
+        "mean": 70.67
+      },
+      "per_structure": {
+        "random_obstacle": {
+          "requested": 60,
+          "accepted": 60,
+          "attempts": 62
+        },
+        "rooms_corridors": {
+          "requested": 60,
+          "accepted": 60,
+          "attempts": 63
+        },
+        "u_detour": {
+          "requested": 60,
+          "accepted": 60,
+          "attempts": 60
+        },
+        "branching_maze": {
+          "requested": 60,
+          "accepted": 60,
+          "attempts": 60
+        },
+        "loop_maze": {
+          "requested": 60,
+          "accepted": 60,
+          "attempts": 60
+        }
+      }
+    }
+  },
+  "independence": {
+    "checked": true,
+    "pairwise_overlaps": {
+      "train__validation": 0,
+      "train__test": 0,
+      "validation__test": 0
+    },
+    "duplicate_hashes_within_splits": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    },
+    "total_duplicate_instances": 0,
+    "unique_maps": {
+      "train": 1000,
+      "validation": 200,
+      "test": 300
+    }
+  },
+  "labels_note": "BFS steps and Dijkstra optimal costs are metadata/reference labels only; they are never used as R-GNN inputs or Q-learning targets."
+}

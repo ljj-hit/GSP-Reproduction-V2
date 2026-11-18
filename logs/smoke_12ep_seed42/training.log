@@ -1,0 +1,28 @@
+2026-11-18 12:55:39 | WARNING | Dataset sizes (100 train, 20 validation) differ from config defaults (1000, 200); recording actual sizes in the effective config.
+2026-11-18 12:55:39 | INFO | ==============================================================================
+2026-11-18 12:55:39 | INFO | GSP-Reproduction-V2 training start
+2026-11-18 12:55:39 | INFO | Seed: 42
+2026-11-18 12:55:39 | INFO | CUDA: cuda:0 (NVIDIA GeForce RTX 5060 Laptop GPU)
+2026-11-18 12:55:39 | INFO | Online parameter device: cuda:0
+2026-11-18 12:55:39 | INFO | Target parameter device: cuda:0
+2026-11-18 12:55:39 | INFO | Train maps: 100 | validation maps: 20
+2026-11-18 12:55:39 | INFO | Episodes: 12 | transitions/search budget: 512
+2026-11-18 12:55:39 | INFO | R-GNN: d=32, layers=4, msg_hidden=64, beta=1.00
+2026-11-18 12:55:39 | INFO | Learning rates: body=0.0001, Q-readout=0.001
+2026-11-18 12:55:39 | INFO | Replay: 20000 | batch=64 | updates/episode=2
+2026-11-18 12:55:39 | INFO | Solution bounds: True | dynamic sampling: True
+2026-11-18 12:55:39 | INFO | Initial model: checkpoints\smoke_12ep_seed42\initial_model.pt
+2026-11-18 12:55:39 | INFO | Config: checkpoints\smoke_12ep_seed42\config.json
+2026-11-18 12:55:39 | INFO | ==============================================================================
+2026-11-18 12:55:42 | INFO | First graph batch device audit: {'online_parameters': 'cuda:0', 'target_parameters': 'cuda:0', 'graph_relations': 'cuda:0', 'q_input_objects': 'cuda:0'}
+2026-11-18 12:55:42 | INFO | CUDA reverse pass verified; online parameter device type=cuda
+2026-11-18 12:55:42 | INFO | Episode 1/12 | recent success=100.0% | loss=10.2604 | buffer=141 | updates=2 | category=satisficed | elapsed=2.0s | GPU=NVIDIA GeForce RTX 5060 Laptop GPU
+2026-11-18 12:56:42 | INFO | Validation @ 4 | success=75.00% (15/20) | PCR=1.0000 | transition_evals=328.45 | unique_state_expansions=114.15 | best=True
+2026-11-18 12:58:33 | INFO | Validation @ 8 | success=75.00% (15/20) | PCR=1.0000 | transition_evals=328.45 | unique_state_expansions=114.15 | best=False
+2026-11-18 12:59:29 | INFO | Validation @ 12 | success=75.00% (15/20) | PCR=1.0000 | transition_evals=328.45 | unique_state_expansions=114.15 | best=False
+2026-11-18 12:59:29 | INFO | Training complete in 3m49s
+2026-11-18 12:59:29 | INFO | Peak allocated GPU memory: 610.43 MiB
+2026-11-18 12:59:29 | INFO | Best validation: {'num_instances': 20, 'num_solved': 15, 'success_rate': 75.0, 'mean_pcr_successful': 1.0, 'mean_path_cost_successful': 83.4, 'mean_unique_state_expansions': 114.15, 'mean_reexpansions': 0.0, 'mean_transition_evaluations': 328.45}
+2026-11-18 12:59:29 | INFO | Initial checkpoint: checkpoints\smoke_12ep_seed42\initial_model.pt
+2026-11-18 12:59:29 | INFO | Best checkpoint: checkpoints\smoke_12ep_seed42\best_model.pt
+2026-11-18 12:59:29 | INFO | Last checkpoint: checkpoints\smoke_12ep_seed42\last_model.pt

@@ -1,0 +1,10 @@
+2026-11-18 13:01:49 | INFO | Evaluation complete: 20 maps x 5 algorithms in 1m34s
+2026-11-18 13:01:49 | INFO | Algorithm                       Success        PCR      UniqExp          TransEval
+2026-11-18 13:01:49 | INFO | Dijkstra                        100.00%     1.0000       107.95             320.45
+2026-11-18 13:01:49 | INFO | A* + Manhattan                   80.00%     1.0000        82.45             239.30
+2026-11-18 13:01:49 | INFO | WA* + Manhattan                  80.00%     1.0253        73.35             215.70
+2026-11-18 13:01:49 | INFO | Untrained R-GNN + WA*            75.00%     1.0000        95.50             276.20
+2026-11-18 13:01:49 | INFO | Trained GSP-RGNN + WA*           75.00%     1.0000        94.95             274.35
+2026-11-18 13:01:49 | INFO | Evaluation CSV: results\smoke_12ep_seed42\evaluation.csv
+2026-11-18 13:01:49 | INFO | Structure CSV: results\smoke_12ep_seed42\structure_analysis.csv
+2026-11-18 13:01:49 | INFO | Summary: results\smoke_12ep_seed42\summary.json

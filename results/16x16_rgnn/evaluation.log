@@ -1,0 +1,10 @@
+2026-11-18 19:58:38 | INFO | Evaluation complete: 300 maps x 5 algorithms in 30m19s
+2026-11-18 19:58:38 | INFO | Algorithm                       Success        PCR      UniqExp          TransEval
+2026-11-18 19:58:38 | INFO | Dijkstra                        100.00%     1.0000       131.31             390.31
+2026-11-18 19:58:38 | INFO | A* + Manhattan                   75.67%     1.0081        99.87             290.35
+2026-11-18 19:58:38 | INFO | WA* + Manhattan                  86.00%     1.0261        80.25             234.40
+2026-11-18 19:58:38 | INFO | Untrained R-GNN + WA*            71.67%     1.0000       114.71             332.88
+2026-11-18 19:58:38 | INFO | Trained GSP-RGNN + WA*           77.00%     1.0166       100.34             294.44
+2026-11-18 19:58:38 | INFO | Evaluation CSV: results\16x16_rgnn\evaluation.csv
+2026-11-18 19:58:38 | INFO | Structure CSV: results\16x16_rgnn\structure_analysis.csv
+2026-11-18 19:58:38 | INFO | Summary: results\16x16_rgnn\summary.json

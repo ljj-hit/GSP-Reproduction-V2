@@ -1,0 +1,26 @@
+2026-11-18 13:17:09 | INFO | Generating V2 weighted-maze datasets with seed 42
+2026-11-18 13:17:09 | INFO | [train] random_obstacle: 200/200 after 210 attempts
+2026-11-18 13:17:10 | INFO | [train] rooms_corridors: 200/200 after 221 attempts
+2026-11-18 13:21:10 | INFO | Generating V2 weighted-maze datasets with seed 42
+2026-11-18 13:21:10 | INFO | [train] random_obstacle: 200/200 after 210 attempts
+2026-11-18 13:21:11 | INFO | [train] rooms_corridors: 200/200 after 221 attempts
+2026-11-18 13:23:52 | INFO | Generating V2 weighted-maze datasets with seed 42
+2026-11-18 13:23:52 | INFO | [train] random_obstacle: 200/200 after 210 attempts
+2026-11-18 13:23:53 | INFO | [train] rooms_corridors: 200/200 after 221 attempts
+2026-11-18 13:23:54 | INFO | [train] u_detour: 200/200 after 200 attempts
+2026-11-18 13:23:55 | INFO | [train] branching_maze: 200/200 after 200 attempts
+2026-11-18 13:23:56 | INFO | [train] loop_maze: 200/200 after 200 attempts
+2026-11-18 13:23:56 | INFO | Saved data\16x16_rgnn\train.npz (1000 mazes, structures={'random_obstacle': 200, 'rooms_corridors': 200, 'u_detour': 200, 'branching_maze': 200, 'loop_maze': 200})
+2026-11-18 13:23:56 | INFO | [validation] random_obstacle: 40/40 after 44 attempts
+2026-11-18 13:23:56 | INFO | [validation] rooms_corridors: 40/40 after 43 attempts
+2026-11-18 13:23:56 | INFO | [validation] u_detour: 40/40 after 40 attempts
+2026-11-18 13:23:57 | INFO | [validation] branching_maze: 40/40 after 40 attempts
+2026-11-18 13:23:57 | INFO | [validation] loop_maze: 40/40 after 40 attempts
+2026-11-18 13:23:57 | INFO | Saved data\16x16_rgnn\validation.npz (200 mazes, structures={'random_obstacle': 40, 'rooms_corridors': 40, 'u_detour': 40, 'branching_maze': 40, 'loop_maze': 40})
+2026-11-18 13:23:57 | INFO | [test] random_obstacle: 60/60 after 62 attempts
+2026-11-18 13:23:57 | INFO | [test] rooms_corridors: 60/60 after 63 attempts
+2026-11-18 13:23:58 | INFO | [test] u_detour: 60/60 after 60 attempts
+2026-11-18 13:23:58 | INFO | [test] branching_maze: 60/60 after 60 attempts
+2026-11-18 13:23:58 | INFO | [test] loop_maze: 60/60 after 60 attempts
+2026-11-18 13:23:58 | INFO | Saved data\16x16_rgnn\test.npz (300 mazes, structures={'random_obstacle': 60, 'rooms_corridors': 60, 'u_detour': 60, 'branching_maze': 60, 'loop_maze': 60})
+2026-11-18 13:23:58 | INFO | Saved manifest data\16x16_rgnn\dataset_manifest.json
